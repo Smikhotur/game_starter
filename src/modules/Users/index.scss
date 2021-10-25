@@ -1,0 +1,32 @@
+@import "/src/index.scss";
+
+.users {
+    &__wrapper {
+        @extend %wrapper;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: white;
+        padding: 20px;
+        position: relative;
+
+        &__close {
+            position: absolute;
+            z-index: 2;
+            top: 5px;
+            right: 15px;
+            cursor: pointer;
+            &__icon {
+                height: 20px;
+            }
+        }
+    }
+}

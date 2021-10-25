@@ -1,0 +1,131 @@
+@import "/src/index.scss";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  &__logo {
+    width: 140px;
+  }
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__item {
+    padding: 0;
+  }
+  &__icon {
+    height: 30px;
+  }
+  &__dropdown {
+    z-index: 2;
+    display: none;
+  }
+  &__language {
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 20px;
+    border: none;
+  }
+  &__button,
+  &__button-mobile {
+    padding: 15px 20px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+  }
+  &__controls-mobile {
+    display: none;
+  }
+  &__status {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    &__logout {
+      padding: 15px 20px;
+      color: white;
+      background: black;
+      border-radius: 10px;
+    }
+
+    &__user {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: gray;
+      border-radius: 50%;
+      cursor: pointer;
+      &__profile {
+        height: 100%;
+      }
+    }
+    &__user-controls {
+      padding: 10px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: $phoneBreakPoint) {
+  .nav {
+    &__dropdown {
+      display: inline-block;
+    }
+    &__button {
+      display: none;
+    }
+    &__controls {
+      display: none;
+    }
+    &__button-mobile {
+      display: inline-block;
+    }
+    &__controls-mobile {
+      display: none;
+    }
+    &__controls-mobile-active {
+      position: absolute;
+      height: 100%;
+      display: flex;
+      gap: 40px;
+      flex-direction: column;
+      left: 0;
+      top: 100px;
+      width: 100%;
+      padding: 100px 20px;
+      background-color: white;
+    }
+    &__list-mobile {
+      margin-top: 300px;
+      display: flex;
+      list-style: none;
+      margin: 0 auto;
+      width: 60%;
+      justify-content: space-between;
+    }
+  }
+}

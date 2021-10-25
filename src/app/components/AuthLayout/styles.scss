@@ -1,0 +1,29 @@
+.auth {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  &__leftbar {
+    padding: 20px 0;
+    width: 30%;
+    min-width: 300px;
+    background-color: #001aff;
+    color: #fff;
+    font-size: 72px;
+    font-weight: 900;
+    h5 {
+      width: 250px;
+      margin: -50px auto 50px;
+    }
+  }
+  &__content {
+    width: 70%;
+  }
+  &__logo {
+    width: 200px;
+    margin: 0 auto 50px;
+    display: block;
+  }
+  &__rocket {
+    width: 270px;
+  }
+}

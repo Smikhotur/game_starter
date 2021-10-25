@@ -1,0 +1,52 @@
+@import "/src/index.scss";
+
+.games {
+  &__wrapper {
+    @extend %wrapper;
+    margin-top: 100px;
+  }
+  &__cards-area {
+    margin-top: 40px;
+    @extend %wrapper;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 4%;
+    justify-content: space-around;
+  }
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    &__search,
+    &__paginator {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &__page {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &__arrow {
+      background: white;
+      border-radius: 50%;
+      padding: 10px 17px;
+    }
+  }
+  &__confirm-search {
+    padding: 15px 20px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+  }
+  &__search,
+  &__language,
+  &__count {
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 20px;
+    border: none;
+  }
+}

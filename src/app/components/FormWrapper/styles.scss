@@ -1,0 +1,32 @@
+.login {
+  &__form {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  &__submit {
+    cursor: pointer;
+    text-transform: capitalize;
+    color: white;
+    background: #999;
+    transition: all 0.3s linear;
+    font-size: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 33%);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    &:hover {
+      background: rgb(124, 124, 124);
+    }
+    &-valid {
+      background-color: #001aff;
+      &:hover {
+        background-color: #001aff;
+      }
+    }
+  }
+}

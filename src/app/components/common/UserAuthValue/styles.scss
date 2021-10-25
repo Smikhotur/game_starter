@@ -1,0 +1,17 @@
+input.input__error {
+  border: 2px solid red;
+}
+
+.error__message {
+  color: red;
+}
+
+input.auth__input {
+  font-size: 20px;
+  padding: 30px 100px;
+  text-align: center;
+  outline: none;
+  border: none;
+  box-shadow: 0 10px 20px #00000054;
+  border-radius: 20px;
+}

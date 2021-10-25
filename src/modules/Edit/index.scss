@@ -1,0 +1,86 @@
+@import "/src/index.scss";
+
+.edit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @extend %wrapper;
+  &__title {
+    font-size: 36px;
+  }
+
+  &__profile {
+    width: 60%;
+
+    &__picture {
+      width: 30%;
+      float: left;
+      border: 1px solid black;
+    }
+
+    &__information {
+      width: 50%;
+      float: right;
+
+      & div {
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: left;
+        color: #999;
+        & span {
+          display: block;
+          width: 100%;
+          margin-left: 10px;
+          cursor: pointer;
+          text-transform: capitalize;
+          color: white;
+          background-color: #001aff;
+          transition: all 0.3s linear;
+          font-size: 20px;
+          padding: 30px 20px;
+          text-align: center;
+          outline: none;
+          border: none;
+          box-shadow: 0 10px 20px rgb(0 0 0 / 33%);
+          border-radius: 20px;
+        }
+      }
+
+      &__back {
+        margin-top: 30px;
+        margin-left: 15px;
+        width: 100%;
+        cursor: pointer;
+        text-transform: capitalize;
+        color: white;
+        background: #999;
+        transition: all 0.3s linear;
+        font-size: 20px;
+        padding: 30px 20px;
+        text-align: center;
+        outline: none;
+        border: none;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 33%);
+        border-radius: 20px;
+      }
+    }
+
+    &__back {
+      margin-top: 20px;
+      width: 100%;
+      cursor: pointer;
+      text-transform: capitalize;
+      color: white;
+      background: #999;
+      transition: all 0.3s linear;
+      font-size: 20px;
+      padding: 30px 20px;
+      text-align: center;
+      outline: none;
+      border: none;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 33%);
+      border-radius: 20px;
+    }
+  }
+}

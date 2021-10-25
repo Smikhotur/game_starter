@@ -1,0 +1,47 @@
+@import "../../../index.scss";
+
+.header {
+  &__wrapper {
+    @extend %wrapper;
+  }
+  &__text-area {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+  }
+  &__title,
+  &__description {
+    margin: 0;
+    width: 35%;
+    font-size: 20px;
+  }
+  &__description {
+    text-align: end;
+  }
+  &__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: $desktopBreakPoint) {
+  .header {
+    &__title {
+      font-size: 50px;
+    }
+  }
+}
+@media (max-width: $phoneBreakPoint) {
+  .header {
+    &__text-area {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title,
+    &__description {
+      width: 80%;
+    }
+  }
+}

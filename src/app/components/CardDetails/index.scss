@@ -1,0 +1,44 @@
+.description {
+  display: flex;
+  gap: 20px;
+
+  &__img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px #00000054;
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px #00000054;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 10px 10px;
+  }
+
+  &__name {
+    font-size: 24px;
+  }
+
+  &__box-comments {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 30px;
+  }
+
+  &__comments {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
