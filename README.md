@@ -12,7 +12,6 @@ Folder `src/utils` contains utils which can be moved between projects.
 
 For new features or new tasks please start branch name from `feature/YOUR_FEATURE` where YOUR_FEATURE name of feature.
 For bug fix start branch from `bug/`
-Main approvers of this project is Bohdan Boiko and Oleh Perehuda. Please add them as reviewers.
 As a plus you can add screens or videos to your PR.
 Remeber Main branch auto deploy to Heroku `https://gaming-agregator.herokuapp.com/`
 
